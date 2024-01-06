@@ -1,0 +1,99 @@
+<!-- emergency_popup.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    android:padding="16dp"
+    android:layout_margin="20dp"
+    tools:context=".emergency_call">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- Rumah Sakit -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/hospital" />
+
+            <TextView
+                android:id="@+id/tvHospital"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Panggilan Darurat Rumah Sakit"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- Kepolisian -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/police"/>
+            <TextView
+                android:id="@+id/tvPolice"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Panggilan Darurat Kepolisian"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- Pemadam Kebakaran -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/fire_station"/>
+
+            <TextView
+                android:id="@+id/tvFire"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Panggilan Darurat Pemadam Kebakaran"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

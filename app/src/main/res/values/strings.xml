@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EDUMAS</string>
+    <string name="history">Riwayat Laporan</string>
+    <string name="home_pengaduan">Pengaduan</string>
+    <string name="pengaduan">Form Pengaduan</string>
+    <string name="blt">Dana Bantuan</string>
+    <string name="beritaKebakaran">Berita Kebakaran</string>
+    <string name="beritaInfrastruktur">Berita Infrastruktur</string>
+    <string name="beritaBencana">Berita Bencana</string>
+</resources>

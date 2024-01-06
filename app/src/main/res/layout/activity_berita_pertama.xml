@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".berita_pertama">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logo"
+        android:layout_width="412dp"
+        android:layout_height="63dp"
+        app:cardElevation="20dp">
+
+        <!-- Form Pengaduan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_back"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/beritaKebakaran"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/red_200"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/icon_notif"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/formRelative"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/viewReport"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Kebakaran Hebat di Yogyakarta, Ruko Kelontong Ludes"/>
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_below="@+id/viewReport"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/berita1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kebakaran hebat terjadi di Kota Yogyakarta Minggu (17/7/2022) dini hari sekira 01.20 WIB. Ruko kelontong Sinar Jaya yang berada di Jalan Tukangan No 34 Tegal Kemuning Tegalpanggung Danurejan, Yogyakarta, ludes terbakar. Akibat kebakaran tersebut, pemilik mengalamj kerugian mencapai ratusan juta rupiah. Kasie Humas Polresta Yogyakarta, AKP Timbul Sasana Raharja mengatakan, pada Sabtu (16/7/2022) malam pemilik ruko, Sri Lestari seperti biasa sebelum tidur menyalakan obat nyamuk bakar. Kala itu, Sri Lestari memberi obat nyamuk tersebut dengan alas kertas di dekat mobil.Sekira pukul 01.00 WIB, Sri Lestari terbangun karena terdengar suara aneh. Saat Sri Lestari terbangun sudah melihat api yang mulai membesar di sekitar tempat obat nyamuk bakar yang ditaruhnya. Seketika itu Sri Lestari dan keluarga keluar dari rumah."
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"/>
+
+</LinearLayout>
+</RelativeLayout>

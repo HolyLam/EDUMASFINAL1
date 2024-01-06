@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".berita_kedua">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logo"
+        android:layout_width="412dp"
+        android:layout_height="63dp"
+        app:cardElevation="20dp">
+
+        <!-- Form Pengaduan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_back"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/beritaInfrastruktur"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/red_200"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/icon_notif"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/logo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/formRelative"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/viewReport"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Revitalisasi Benteng Keraton, Rumah Warga hingga Hotel Akan Dibongkar"/>
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_below="@+id/viewReport"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/berita2" />
+        <TextView
+            android:id="@+id/tvBeritaDua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warga yang tinggal di sepanjang Jalan Brigjen Katamso sisi barat dan Jalan KH Wahid Hasyim serta para pemangku wilayah berkumpul di Bangsal Prabeya, Keraton Jogjakarta, Rabu (13/9/23). Kedatangan mereka untuk memenuhi undangan yang disampaikan Kawedanan Hageng Punakawan Datu Dana Suyasa Karaton Ngayogyakarta Hadiningrat.
+\n\nPertemuan digelar untuk sosialisasi. Kaitannya soal revitalisasi kawasan sisi luar beteng. Masyarakat yang memanfaatkan tanah kasultanan di Jalan Brigjen Katamso sisi barat dari Madyosuro hingga Pojok Beteng Wetan dan Jalan KH Wahid Hasyim sisi timur dari perempatan Tamansari hingga Pojok Beteng Lor Wetan akan terdampak revitalisi. Mereka diminta untuk tidak memperpanjang izin kekancingan.
+\n\nSalah seorang warga yang turut akan terdampak proyek revitalisasi sisi luar beteng adalah Hanung Heru Haryoto, 63. Dia merupakan satu dari puluhan warga Notoprajan yang akan terdampak revitalisasi sisi luar beteng. Hanung merupakan pemilik Hotel Pelangi di Jalan KH Wahid Hasyim, Notoprajan, Ngampilan, Kota Jogja. Bangunan itu berdiri di atas tanah SHM seluas 650 meter persegi.
+\n\nHanung mengaku tak masalah jika tanah beserta bangunan miliknya itu harus diberikan kepada Kraton. Ini karena dia menyadari, revitalisasi menjadi bagian penting dalam pelestarian budaya di Jogjakarta. Hanya saja, dia meminta ganti untung yang sesuai. Apalagi, bangunan di atas tanahnya adalah hotel.
+\n\nSaat ditanya soal harapan nominal bebungah, Hanung mengaku masih melakukan perhitungan. Ini lantaran tak hanya tanah saja yang seharusnya ditukar dengan bebungah. Namun ia juga meminta penggantian juga termasuk bangunan hotel yang berdiri di sana."
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

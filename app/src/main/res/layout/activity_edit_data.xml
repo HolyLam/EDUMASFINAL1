@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".editData"
+    android:id="@+id/formAduan">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:id="@+id/toolbar"-->
+<!--        app:title="Edit Data"-->
+<!--        app:titleTextColor="@color/red_200"-->
+<!--        app:navigationIcon="@drawable/icon_back"-->
+<!--        android:elevation="4dp"-->
+<!--        android:background="@color/lightGray"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--        app:menu="@menu/top_app_bar"-->
+<!--        />-->
+
+    <!--LAYOUT EDUMAS-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="412dp"
+        android:layout_height="63dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--EDUMAS-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_back"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="EDUMAS"
+                android:textColor="#E45F5F"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:src="@drawable/icon_notif"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/formRelative">
+
+
+        <!--        <ImageButton-->
+        <!--            android:contentDescription="@string/app_name"-->
+        <!--            android:id="@+id/btnKamera"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="140dp"-->
+        <!--            android:src="@drawable/icon_camera"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:layout_marginEnd="25dp"-->
+        <!--            android:background="@drawable/bg_camera"-->
+        <!--            />-->
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bottom_background"
+            android:contentDescription="Pick Image or Take Picture"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/viewReport"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:counterEnabled="true">
+
+        </TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputName"
+            android:layout_below="@+id/viewReport"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Nama Pelapor"
+            app:helperText="Required"
+            app:helperTextTextColor="@color/red_700"
+            app:counterEnabled="true"
+            app:counterMaxLength="25"
+            app:endIconMode="custom"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputNama"
+                android:maxLength="26"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputName"
+            android:id="@+id/textInputLokasi"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Lokasi"
+            app:helperText="Required"
+            app:helperTextTextColor="@color/red_700"
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLocation"
+                android:maxLength="40"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLokasi"
+            android:id="@+id/textInputTelp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Nomor Telepon"
+            app:helperText="Required"
+            app:helperTextTextColor="@color/red_700"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputTelepon"
+                android:maxLength="15"
+                android:inputType="phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputTelp"
+            android:id="@+id/textInputKejadian"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Inti Kejadian"
+            app:counterMaxLength="120"
+            app:helperText="Required"
+            app:counterEnabled="true"
+            app:helperTextTextColor="@color/red_700"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInput"
+                android:maxLength="120"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan data"
+        android:layout_below="@+id/formRelative"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
+

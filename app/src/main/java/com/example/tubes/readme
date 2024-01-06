@@ -1,0 +1,31 @@
+Nama aplikasi: EDUMAS
+Nama kelompok: GECKO
+Nama anggota :
+1) fathi melondre
+2) isnan akbar saputra
+3) muhamad rizqy mustofa
+4) syifa nursabila
+5) alfatih berlian palsa
+
+Job desc:
+Anggota 1:
+-Ketua kelompok
+-Membuat dan menyelesaikan fitur (login,sign up,main menu,ui/ux aplikasi)
+-final check
+-sinkronisasi database
+
+Anggota 2:
+-membuat fitur (pengaduan,berita,profile)
+-menyatukan semua kodingan final dari anggota kelompok
+-sinkronisasi database
+
+Anggota 3 :
+-membuat fitur (terdekat,pengaduan,emergency call)
+-sinkronisasi database
+-pembuatan maps
+
+Anggota 4:
+-pembuatan menu(sign in, sign up)
+
+Anggota 5:
+- pembuatan menu (main menu,landing page)
